@@ -185,10 +185,10 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     line-height: 1.1;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-        text-align: center;
-        font-size: 36px;
-        font-weight: 700;
-        text-transform: capitalize;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
 
 }
 
@@ -205,6 +205,12 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     flex-wrap: wrap;
     gap: 72px;
 }
+
+.fon {
+    background-color: #FFFFFF;
+
+}
+
 
 /* modal window */
 
@@ -490,7 +496,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         padding-top: 112px;
         padding-bottom: 112px;
         max-width: 768px;
-        height: 436px;
     }
 
     .page-title {
@@ -513,9 +518,25 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
                 url('../images/people-ofice-laptop@2x.jpg');
         }
     }
+
+    /* benefits tablet */
+    .content-list {
+        column-gap: 24px;
+    }
+
+    .content-head {
+        text-align: left;
+    }
+
+    .fon {
+        width: calc((100% - 24px) / 2);
+    }
+
 }
 
-/* tablet header styles */
+
+
+
 
 
 
@@ -552,7 +573,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
     /* desktop header styles */
 
-    /*main*/
+    /*main dekstop*/
     .main-section {
         background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
@@ -580,4 +601,38 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
                 url('../images/people-office@2x.jpg');
         }
     }
+
+    /*dekstop benefits*/
+
+    .fon {
+        width: calc((100%-72px) /4);
+    }
+
+    .content-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .icon-benefits {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 264px;
+        height: 112px;
+        border-radius: 4px;
+        border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+        background: var(--CLOUD, #F4F4FD);
+        margin-bottom: 8px;
+    }
+
+    .content-head {
+
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        text-transform: capitalize;
+    }
+
+    .content-discription {
+        font-weight: 400;
 }
