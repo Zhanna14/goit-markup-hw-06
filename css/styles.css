@@ -169,8 +169,42 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     }
 }
 
+/*benefits*/
 
+.icon-benefits {
+    display: none;
+}
 
+.section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.content-head {
+    color: #2e2f42;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: capitalize;
+
+}
+
+.content-discription {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.content-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+}
 
 /* modal window */
 
