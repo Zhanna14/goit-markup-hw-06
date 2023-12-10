@@ -110,8 +110,8 @@ img {
             rgba(46, 47, 66, 0.7)),
         url(../images/mobile-ofice.jpg);
     padding-top: 72px;
-    padding-bottom: 72x;
-    min-height: 432px;
+    padding-bottom: 72px;
+    width: 320px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -134,7 +134,7 @@ img {
     border: none;
     height: 56px;
     min-width: 169px;
-    margin-top: 48px;
+    margin-top: 80px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -161,8 +161,11 @@ img {
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px),
 screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-    .banner {
-        background-image: url('../images/mobile-ofice@2x.jpg');
+    .main-section {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/mobile-ofice@2x.jpg');
     }
 }
 
@@ -442,9 +445,44 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     .list-adress:hover {
         color: #404BBF;
     }
+
+
+    /*main*/
+    .main-section {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-ofice-laptop.jpg);
+        padding-top: 112px;
+        padding-bottom: 112px;
+        width: 768px;
+        height: 436px;
+    }
+
+    .page-title {
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+    }
+
+    .do-order {
+        margin-top: 36px;
+    }
+
+    @media screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+        .main-section {
+            background-image: linear-gradient(to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url('../images/people-ofice-laptop@2x.jpg');
+        }
+    }
 }
 
 /* tablet header styles */
+
 
 
 
@@ -453,13 +491,14 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     .container {
         max-width: 1158px;
     }
-         .main-navigation {
-             margin: 0;
-         }
 
-        .main-contacts {
-            margin: 0;
-        }
+    .main-navigation {
+        margin: 0;
+    }
+
+    .main-contacts {
+        margin: 0;
+    }
 
     .contacts {
         flex-wrap: nowrap;
@@ -479,4 +518,32 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
     /* desktop header styles */
 
+    /*main*/
+    .main-section {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office.jpg);
+        padding: 188px 0;
+        width: 1440px;
+    }
+
+    .do-order {
+        margin-top: 48px;
+    }
+
+
+
+
+
+    @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+    screen and (min-resolution: 2dppx) and (min-width: 1158px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+        .main-section {
+            background-image: linear-gradient(to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url('../images/people-office@2x.jpg');
+        }
+    }
 }
