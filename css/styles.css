@@ -74,8 +74,7 @@ img {
 }
 
 .logo-first {
-    padding-top: 17.5px;
-    padding-bottom: 17.5px;
+
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -190,9 +189,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     font-size: 36px;
     font-weight: 700;
     text-transform: capitalize;
-
-
-
 
 }
 
@@ -378,7 +374,10 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     text-decoration: none;
     display: inline-block;
     margin-bottom: 17.5px;
-    margin-left: 86px;
+}
+
+.logo-footer-conteiner {
+    text-align: center;
 }
 
 
@@ -491,22 +490,25 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 
 .footer-form-input {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     width: 264px;
     height: 40px;
     background-color: transparent;
-    border: 1px solid #ffffff;
+    border: 1px solid rgb(255, 255, 255, 0.3);
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     padding-left: 16px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 1);
 }
 
 .footer-form-input::placeholder {
-    color: #ffffff;
+    color: rgb(255, 255, 255, 0.3);;
 }
+
+
 
 .footer-form-submit-btn {
     min-width: 165px;
@@ -599,9 +601,10 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-    padding-bottom: 40px;
-    padding-top: 72px;
     height: 100%;
+    max-width: 318px;
+    padding: 72px 15px 40px 15px;
+    margin: 0 auto;
 
 }
 
@@ -729,7 +732,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 .review-form-checkbox-label {
     display: flex;
-        align-items: center;
+    align-items: center;
     color: #8E8F99;
     font-size: 12px;
     font-weight: 400;
@@ -821,17 +824,18 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     gap: 40px;
     height: min-content;
 }
+
 .contacts-mobil-conteiner {
-        display: inline-flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 48px;
-        margin: 0;
-        padding: 0;
-        height: min-content;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+    height: min-content;
 
 }
-        
+
 .contacts-mobil {
     display: inline-flex;
     flex-direction: column;
@@ -987,7 +991,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 @media screen and (min-width: 768px) {
 
     .container {
-        max-width: 736px;
+        max-width: 737px;
     }
 
     .mobile-menu-wrapper {
@@ -1002,14 +1006,19 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         display: none;
     }
 
+    .navigation-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .page-navigation {
         display: flex;
         align-items: center;
     }
 
-    .main-navigation {
-        margin-right: 121px;
 
+
+    .main-navigation {
         display: flex;
         gap: 40px;
         position: relative;
@@ -1040,18 +1049,18 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     }
 
     .main-contacts {
+        display: inline-flex;
         text-decoration: none;
-            font-style: normal;
+        font-style: normal;
 
-        display: block;
-        margin-top: 16px;
-        margin-bottom: 16px;
     }
 
     .contacts {
         display: flex;
         flex-wrap: wrap;
         gap: 12px;
+        width: min-content;
+
     }
 
     .logo-navigation::after {
@@ -1161,16 +1170,24 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         margin-left: 0px;
     }
 
-
+.conclusion-text {
+    max-width: 264px;
+}
 
     .conclusion {
         padding-bottom: 104px;
     }
 
     .footer-container {
+        max-width: 530px;
         column-gap: 24px;
         row-gap: 72px;
-        justify-content: flex-start;
+        justify-content: left;
+
+    }
+
+    .logo-footer-conteiner {
+        text-align: left;
     }
 
 
@@ -1215,6 +1232,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         max-width: 1158px;
     }
 
+
     .main-navigation {
         margin: 0;
     }
@@ -1225,13 +1243,11 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
     .contacts {
         flex-wrap: nowrap;
-        display: flex;
         gap: 40px;
+        width: auto;
     }
 
     .list-adress {
-        padding-top: 24px;
-        padding-bottom: 24px;
         font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
@@ -1380,9 +1396,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         margin-right: 120px;
     }
 
-    .conclusion-text {
-        max-width: 264px;
-    }
+    
 
     .footer-container-social {
         margin-right: 80px;
