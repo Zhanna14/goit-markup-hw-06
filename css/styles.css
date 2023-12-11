@@ -35,7 +35,8 @@ img {
 .team-icon-container-foot,
 .team-icon-container,
 .contacts-mobil,
-.main-mobil-head {
+.main-mobil-head,
+.team-icon-container-mobil {
     list-style-type: none;
 }
 
@@ -236,9 +237,9 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 .content-head {
     color: #2e2f42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
 
@@ -594,8 +595,19 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 }
 
 .mobile-menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     position: relative;
+    padding-bottom: 40px;
+    padding-top: 72px;
+    height: 100%;
+
 }
+
+
+
+
 
 .modal-close-btn-color {
     display: flex;
@@ -807,16 +819,26 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
-    margin-bottom: 168px;
-    margin-top: 72px;
+    height: min-content;
 }
+.contacts-mobil-conteiner {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 48px;
+        margin: 0;
+        padding: 0;
+        height: min-content;
 
+}
+        
 .contacts-mobil {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    margin-bottom: 48px;
+    margin: 0;
+    padding: 0;
 }
 
 .mobil-tel {
@@ -826,11 +848,11 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-decoration: none;
+    font-style: normal;
 }
 
 .mobil-emeil {
     color: #434455;
-    margin-bottom: 48px;
 }
 
 .team-icon-container-mobil {
@@ -838,8 +860,9 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     gap: 40px;
     justify-content: center;
     align-items: center;
-    margin: 0 0 40px 0;
+    margin: 0;
     padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .border-icon-team {
@@ -887,9 +910,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     fill: #FFFFFF;
 }
 
-.mobile-menu-container {
-    position: relative;
-}
+
 
 .modal-close-btn {
     display: flex;
@@ -1019,6 +1040,9 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     }
 
     .main-contacts {
+        text-decoration: none;
+            font-style: normal;
+
         display: block;
         margin-top: 16px;
         margin-bottom: 16px;
@@ -1270,7 +1294,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     }
 
     .content-head {
-
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
